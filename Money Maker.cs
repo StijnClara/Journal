@@ -16,13 +16,13 @@ namespace MoneyMaker
 
       int goldValue = 10;
       int silverValue = 5;
-      int bronzeValue = 1;
+      
 
       double goldCoins = Math.Floor(total / goldValue);
       double leftOver = Math.Floor(total % goldValue);
       double silverCoins = Math.Floor(leftOver / silverValue);
       leftOver = Math.Floor(leftOver % silverValue);
-      double bronzeCoins = Math.Floor(leftOver / bronzeValue);
+      double bronzeCoins = Math.Floor(leftOver / 1);
 
       Console.WriteLine($"Than you get, {goldCoins} gold coins, {silverCoins} silver coins and {bronzeCoins} bronze coins.");
     }
